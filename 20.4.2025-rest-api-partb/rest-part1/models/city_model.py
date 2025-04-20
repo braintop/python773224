@@ -1,13 +1,13 @@
 import sqlite3
 
-class City:
+class CityModel:
     @staticmethod
     def get_db_connection():
         return sqlite3.connect("mydb.db")
 
     @staticmethod
     def create_table():
-        with City.get_db_connection() as connection:
+        with CityModel.get_db_connection() as connection:
             cursor = connection.cursor()
             sql = '''create table if not exists cities
                     (city_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -18,7 +18,7 @@ class City:
 
     @staticmethod
     def create(name):
-        with City.get_db_connection() as connection:
+        with CityModel.get_db_connection() as connection:
             cursor = connection.cursor()
             sql = 'insert into cities (name) values(?)'
             cursor.execute(sql, (name,))
@@ -29,7 +29,7 @@ class City:
 
     @staticmethod
     def get_all():
-        with City.get_db_connection() as connection:
+        with CityModel.get_db_connection() as connection:
             cursor = connection.cursor()
             sql = 'SELECT * FROM CITIES'
             cursor.execute(sql)
@@ -39,7 +39,7 @@ class City:
 
     @staticmethod
     def delete(city_id):
-        with City.get_db_connection() as connection:
+        with CityModel.get_db_connection() as connection:
             cursor = connection.cursor()
             # Check if city exists
             cursor.execute('SELECT * FROM cities WHERE city_id = ?', (city_id,))

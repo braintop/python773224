@@ -1,5 +1,5 @@
 from flask import Flask
-from models.city import City
+from models.city_model import CityModel
 from routes.city_routes import city_bp
 
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.register_blueprint(city_bp)
 
 # Create the database table
-City.create_table()
+CityModel.create_table()
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000) 
