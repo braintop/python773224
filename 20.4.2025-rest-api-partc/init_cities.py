@@ -1,13 +1,13 @@
-from models.city import City
+from models.city_model import CityModel
 
 def init_cities():
     # Create the table first
-    City.create_table()
+    CityModel.create_table()
     
     # Add initial cities
-    cities = ['Tel Aviv', 'Jerusalem', 'Haifa']
+    cities = ['Tel-Aviv', 'Jerusalem', 'Haifa']
     for city_name in cities:
-        City.create(city_name)
+        CityModel.create(city_name)
         print(f"Added city: {city_name}")
 
 if __name__ == '__main__':
