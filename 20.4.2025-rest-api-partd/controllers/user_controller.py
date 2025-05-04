@@ -50,4 +50,16 @@ class UserController:
         result = User.delete(user_id)
         if result is None:
             return jsonify({'error': 'User not found'}), 404
-        return jsonify(result) 
+        return jsonify(result)
+
+    @staticmethod
+    def login_user():
+        data = request.get_json()
+        if not data or not all(k in data for k in ['email', 'password']):
+            return jsonify({'error': 'Missing email or password'}), 400
+
+        user = User.authenticate(data['email'], data['password'])
+        if user:
+            return jsonify({'message': 'התחברת בהצלחה'})
+        else:
+            return jsonify({'error': 'אימייל או סיסמה שגויים'}), 401 

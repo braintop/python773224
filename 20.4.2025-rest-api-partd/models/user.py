@@ -139,4 +139,24 @@ class User:
             cursor.execute('DELETE FROM users WHERE user_id = ?', (user_id,))
             connection.commit()
             cursor.close()
-            return {'message': f"User {user_id} deleted successfully"} 
+            return {'message': f"User {user_id} deleted successfully"}
+
+    @staticmethod
+    def authenticate(email, password):
+        with User.get_db_connection() as connection:
+            cursor = connection.cursor()
+            sql = 'SELECT * FROM users WHERE email = ?'
+            cursor.execute(sql, (email,))
+            user = cursor.fetchone()
+            cursor.close()
+            if user and check_password_hash(user[4], password):
+                return {
+                    'user_id': user[0],
+                    'first_name': user[1],
+                    'last_name': user[2],
+                    'email': user[3],
+                    'city_id': user[5],
+                    'salary': user[6],
+                    'is_admin': bool(user[7])
+                }
+            return None 
