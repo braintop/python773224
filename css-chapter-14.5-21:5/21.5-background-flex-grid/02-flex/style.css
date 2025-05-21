@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    padding: 10px;
+    border:1px solid blue;
+    background-color: wheat;
+    margin: 10px;
+        /* flex properties  */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    gap:10px;
+    /* flex-direction: column; */
+
+}
+section div{
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    
+}
+

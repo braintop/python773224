@@ -1,0 +1,54 @@
+div{
+    border:1px solid salmon;
+    width: 200px;
+    height: 70px;
+    background-color: orange;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+div:nth-child(1){
+              /* x    y   spread */
+    box-shadow: 10px 5px 10px blue;
+    text-shadow: 3px 6px 5px;
+}
+div:nth-child(2){
+    background-image: linear-gradient(45deg, blue,green, red, gray);
+}
+div:nth-child(3){
+    transform: rotate(30deg) scale(1.5);
+}
+div:nth-child(4){
+    animation: coolAnimation 5s;
+}
+/* https://www.1001fonts.com/modern-fonts.html */
+div:nth-child(5){
+    font-family: milker;
+}
+
+@keyframes coolAnimation {
+    0%{
+        width: 100px;
+        color:orange
+    }
+    50%{
+        width: 200px;
+        color: blue;
+        transform: rotate(30deg) scale(1.5);
+    }
+    100%{
+        width: 180px;
+        color:red; 
+    }
+}
+
+@font-face {
+    font-family: milker ;
+    src: url("public/fonts/Milker.otf");
+}
+
+
+
+

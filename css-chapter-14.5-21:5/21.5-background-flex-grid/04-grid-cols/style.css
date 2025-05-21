@@ -1,0 +1,23 @@
+section{
+    border:1px solid blue; 
+    padding:5px; 
+}
+
+section  div {
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    border:1px solid green;
+    background-color: aliceblue;
+}
+
+section{
+    display: grid;
+    /* grid-template-columns: 40% 20% 40%; */
+    /* fraction = fraction unit  */
+    /* grid-template-columns: 4fr 1fr 4fr;  */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    grid-template-columns: repeat(3, 1fr);
+
+}

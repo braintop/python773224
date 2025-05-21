@@ -1,0 +1,19 @@
+.box1{
+    border: 30px solid black;
+    width: 200px;
+    height: 400px;
+    padding: 10px;
+    margin:70px;
+}
+.box2{
+    border: 30px solid black;
+    width: 200px;
+    height: 400px;
+    margin:70px;
+}
+
+
+/* margin-top
+margin-right 
+margin-left 
+margin-bottom */
