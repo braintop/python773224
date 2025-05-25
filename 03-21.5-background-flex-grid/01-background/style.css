@@ -1,0 +1,24 @@
+
+html, body{
+    padding: 0px;
+    margin:0px;
+    height: 100%;
+
+    /* #1 
+    background-color: blueviolet; */
+
+    /* #2 grdient color  */
+    /* background-image: linear-gradient(gray, white); */
+
+    /* #3 background cover  */
+    /* background-image: url("images/sergi.jpg");
+    background-size: cover; */
+
+    /* #4 background tile  */
+    background-image: url("images/tile2.png");
+
+}
+
+p{
+    color:red; 
+}

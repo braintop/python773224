@@ -1,0 +1,23 @@
+section{
+    border:1px solid blue; 
+    padding:5px; 
+}
+
+section  div {
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    border:1px solid green;
+    background-color: aliceblue;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    /* Rows */
+    /* grid-template-rows: 70px 70px 70px 70px; */
+    /* grid-template-rows: repeat(4, 170px); */
+    grid-template-rows: 100px repeat(3, 170px);
+    gap:5px
+
+}

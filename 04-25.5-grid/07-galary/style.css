@@ -1,0 +1,29 @@
+section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+    border:3px solid salmon;
+    padding: 10px;
+    flex-direction: column;
+}
+section  img {
+    width: 200px;
+    height: 200px;
+}
+
+.titles{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+    gap:10px;
+}
+.title{
+    border:2px solid seagreen;
+    padding:5px; 
+    text-align: center;
+}
+
