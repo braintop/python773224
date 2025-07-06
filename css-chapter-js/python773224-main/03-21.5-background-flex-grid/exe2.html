@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px; 
+        }
+        #layout{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        aside{
+            width: 20%;
+            background-color: #2c3e50;
+            color:wheat;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        main{
+            width: 80%;
+            background-color: #ecf0f1;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+        nav{
+            background-color: black;
+            display: flex;
+            color:black;
+            flex-direction: column;
+            gap:10px;
+            padding: 5px;
+        }
+        nav div{
+            background-color: pink;
+
+            text-align: center;
+            border:1px solid;
+            padding: 10px;
+        }
+        nav div:hover{
+            background-color: #acacac;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <section id="layout">
+        <aside>
+            <p>side bar</p> 
+            <nav>
+                <div>1</div>   
+                <div>2</div>   
+                <div>3</div>   
+                <div>4</div>   
+            </nav>
+        </aside>
+        <main>Main Content</main>
+    </section>
+
+</body>
+
+</html>

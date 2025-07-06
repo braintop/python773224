@@ -1,0 +1,52 @@
+p{
+    font-size: 20px;
+    color:red;
+    background-color: lawngreen;
+}
+a{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border:3px solid black
+ }
+a:hover{
+    border:none;
+    background-color: purple;
+
+}
+.line{
+    color: blueviolet;
+}
+.highlight{
+    background-color: yellow;
+    color:blue
+}
+
+#footer{
+    text-align: "center";
+    background-color: black;
+    padding: 15px;
+    color:white;
+}
+
+input[type="password"]{
+    background-color: pink;
+}
+input[type="email"]{
+    background-color: royalblue;
+}
+.container{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: hotpink;
+}
+
+.container p{
+    background-color: gray;
+    color:green;
+    padding: 5px;
+}
