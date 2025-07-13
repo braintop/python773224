@@ -4,7 +4,7 @@ export function SumNumbers() {
     const [number2, setNumber2] = useState(0)
     const [sum, setSum] = useState(0)
     function ChangeNumber1(e) {
-        
+
         setNumber1(+e.target.value)
     }
     function ChangeNumber2(e) {
@@ -18,7 +18,7 @@ export function SumNumbers() {
             <input
                 type="number"
                 placeholder="type first number"
-                onChange={ChangeNumber1}
+                onChange={(e) => setNumber1(+e.target.value)}
             >
             </input>
             <input

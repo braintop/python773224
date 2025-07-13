@@ -1,7 +1,5 @@
 import { useState } from "react"
 export function Message(){
-    console.log("components Message rendered")
-
     //1. properties
     const [message, setMessage] = useState("Hello")
     //2. functions 

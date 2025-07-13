@@ -6,7 +6,7 @@ export function Counter(props) {
 
   return (
     <div>
-      <h1 style={{color:"red"}}>----{props.owner} Counter---</h1>
+      <h1 style={{ color: "red" }}>🏆🏆🏆{props.owner}🏆🏆🏆 Counter</h1>
       <h2>Current count: {count}</h2>
       <button onClick={() => setCount(count + 1)}>+</button>
       <button onClick={() => setCount(count - 1)}>-</button>
