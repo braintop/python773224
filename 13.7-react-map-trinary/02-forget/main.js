@@ -21,3 +21,21 @@ arr.forEach((item) => {
     console.log("😯" + item + "😯")
 
 })
+
+let persons = [
+    {
+        firstname: "uri",
+        age: 36
+    },
+    {
+        firstname: "sergei",
+        age: 78
+    },
+    {
+        firstname: "sergei",
+        age: 20
+    },
+]
+
+let perosnsAbove30 = persons.filter((person) => person.age > 30)
+console.log(perosnsAbove30)
