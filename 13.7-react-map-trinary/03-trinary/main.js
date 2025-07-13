@@ -12,5 +12,5 @@ let x = +prompt("enter a number")
 // alert(imogi)
 
 let imogi = x > 10 ? "😃" : "😩"
-// x > 10 ?  אם האיקס גדול מ 10 
+// x > 10 ?      |           אם האיקס גדול מ 10 
 // :  אחרת 
