@@ -1,3 +1,4 @@
+import { ProductList } from "./Components/ProductList"
 import { StudentList } from "./Components/StudentList"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <h1>map</h1>
       <StudentList />
+      <ProductList />
     </>
   )
 }

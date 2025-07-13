@@ -1,9 +1,5 @@
 export function StudentList() {
     let names = ["Or", "Sergei", "Memo", "Laura"]
-    //1. properties 
-    //2. functions 
-    //3. jsx + html 
-
 
     // <ul>
     //    <li>Or</li>
@@ -11,7 +7,7 @@ export function StudentList() {
     //    <li>Memo</li>
     // <ul> 
 
-    let students = names.map((item) => <li>{item}</li>)
+    let students = names.map((item, index) => <li key={index}>{item}</li>)
     return (
         <>
             <p>StudentList</p>
