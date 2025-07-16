@@ -5,6 +5,7 @@ export function Tasks(props) {
             title={task.title}
             isDone={task.isDone}
         />)
+
     return (
         <>
             {tasks}
