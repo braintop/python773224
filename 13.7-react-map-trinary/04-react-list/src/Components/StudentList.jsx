@@ -7,7 +7,7 @@ export function StudentList() {
     //    <li>Memo</li>
     // <ul> 
 
-    let students = names.map((item, index) => <li key={index}>{item}</li>)
+    let students = names.map((item, index) => { <li key={index}>{item}</li> })
     return (
         <>
             <p>StudentList</p>
