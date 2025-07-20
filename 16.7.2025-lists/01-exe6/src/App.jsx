@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <h1>Continue exe</h1>
-      <FavoriteColorsShortCircuitRendering />
-      <FavoriteColors />
+      {/* <FavoriteColorsShortCircuitRendering /> */}
+      {/* <FavoriteColors /> */}
       <ConditionalGreeting />
     </>
   )

@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <h1>Tasks</h1>
-      {/* <Tasks tasks={missions} /> */}
+      <Tasks tasks={missions} />
       {/* <Student firstname="sergei" lastname="memo" grade={100} /> */}
       <Students students={students} />
     </>

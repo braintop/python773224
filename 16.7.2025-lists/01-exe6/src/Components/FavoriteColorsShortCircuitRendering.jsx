@@ -1,5 +1,5 @@
 export function FavoriteColorsShortCircuitRendering() {
-    const colors = ["Red", "Blue", "Brown"];
+    const colors = ["Red", "Blue", "Brown", "Yellow", "Blue"];
 
     let mapList = colors.map((color, index) => {
         return (
