@@ -1,0 +1,24 @@
+.card {
+    border: 4px solid salmon;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: blanchedalmond;
+}
+
+.card:hover {
+    background-color: yellow;
+}
+
+.btn {
+    background-color: #007bff;
+    color: wheat;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

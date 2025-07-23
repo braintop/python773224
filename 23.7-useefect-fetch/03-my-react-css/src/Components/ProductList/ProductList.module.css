@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    flex-wrap: wrap;
+}
