@@ -1,9 +1,15 @@
 import { useState, useEffect } from 'react';
 
 function Counter() {
+    function getMiliionsRowsFromdb(){
+        console.log("get 1000000")
+    }
     const [count, setCount] = useState(0);
 
-
+    useEffect(()=>{
+            getMiliionsRowsFromdb()
+    }, [])
+    
     useEffect(() => {
 
         console.log("המשתנה count השתנה:", count);
