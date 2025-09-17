@@ -1,0 +1,33 @@
+#without docker-compose, we need to write flowwing commands terminal
+#1. docker build -t colors-image .
+#2. docker create --name colors-container colors-image
+#3. docker start colors-container
+# docker compose version 3.8
+version: '3.8'
+#all containers
+services: 
+  #container name
+  #colorama service (application)
+  color-service:
+    image: asafamir/colors-image:1.0 
+    #where is the location of the dockerfile
+    build: .
+
+    #container name to create 
+    container_name: asafamir/colors-container
+
+    volumes:
+        #named volume
+      - log-data:/app/logs
+        #mount database file
+      - ./mydb.db:/app/mydb.db  
+
+#list of volumes
+volumes:
+  log-data:
+
+
+
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'NewStrongPassword123!';
+#FLUSH PRIVILEGES;
+
