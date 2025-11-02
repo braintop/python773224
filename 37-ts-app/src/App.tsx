@@ -5,6 +5,9 @@ import Input from './components/Input'
 import Students from './components/Students'
 import Tasks from './components/Tasks'
 import type TaskProps from './components/Task'
+import ProductList from './components/ProductList'
+import type ProductProps from './components/Product'
+
 function App() {
   const [count, setCount] = useState(0)
   const [tasks, setTasks] = useState<TaskProps[]>([  
@@ -18,6 +21,16 @@ function App() {
     let newTasks: TaskProps[] = tasks.map((task) => task.id === id ? { ...task, isDone: !task.isDone } : task);
     setTasks(newTasks);
   }
+  const [products, setProducts] = useState<ProductProps[]>([
+    { id: 1, name: "Laptop", price: 1000 },
+    { id: 2, name: "Phone", price: 500 },
+    { id: 3, name: "Tablet", price: 300 },
+  ])
+
+  function removeProduct(id: number): void {
+    let newProducts: ProductProps[] = products.filter((product) => product.id !== id);
+    setProducts(newProducts);
+  }
 
 
   const students = [
@@ -25,6 +38,7 @@ function App() {
     { id: 2, name: "Amit", grade: 85 },
     { id: 3, name: "Roni", grade: 92 },
   ]
+
 
   return (
     <>
@@ -36,6 +50,7 @@ function App() {
     <Students students={students} />
 
     <Tasks tasks={tasks} toggleDone={toggleDone} />
+    <ProductList products={products} removeProduct={removeProduct} />
     </>
   )
 }
