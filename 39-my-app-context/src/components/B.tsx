@@ -1,4 +1,4 @@
-import C from "./C";
+import C from "./C/C";
 
 import type DetailsProps from "./interfaces/DatailsProps";
 

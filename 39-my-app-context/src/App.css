@@ -1,0 +1,54 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.app button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.light button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.app.light button:hover {
+  background-color: #0056b3;
+}
+
+.app.dark button {
+  background-color: #4a5568;
+  color: #ffffff;
+}
+
+.app.dark button:hover {
+  background-color: #2d3748;
+}
+
+.app h1 {
+  margin-bottom: 20px;
+}
+
+.app > div {
+  margin-bottom: 15px;
+}
+
+.color{
+  color: green;
+}

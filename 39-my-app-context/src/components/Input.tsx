@@ -7,7 +7,7 @@ export default function Input() {
         setName(event.target.value)
     }
     return (
-        <div>
+        <div >
             <input type="text" onChange={handleFirstName} />
         </div>
     )
