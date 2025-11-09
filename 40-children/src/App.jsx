@@ -2,6 +2,7 @@ import Card from './components/Card'
 import Cardv2 from './components/Cardv2'
 import Box from './components/Box'
 import Alert from './components/Alert'
+import Alert2 from './components/Alert2'
 function App() {
   return (
     <>
@@ -49,6 +50,11 @@ function App() {
     <Alert type="info">
       <p>This is a info alert</p>
     </Alert>
+
+    <Alert2 type="success"> <p>This is a success alert</p> </Alert2>
+    <Alert2 type="error"> <p>This is a error alert</p> </Alert2>
+    <Alert2 type="warning"> <p>This is a warning alert</p> </Alert2>
+    <Alert2 type="info"> <p>This is a info alert</p> </Alert2>
     </>
   )
 }
