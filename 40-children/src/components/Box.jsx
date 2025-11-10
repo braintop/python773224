@@ -1,12 +1,15 @@
+import styles from './Box.module.css'
 export default function Box({color,children}) {
+
+  const colors = {
+    red: 'red',
+    blue: 'blue',
+    green: 'green',
+    yellow: 'yellow',
+    purple: 'purple',
+  }
     return (
-      <div style={{
-        border: "2px solid pink",
-        borderRadius: "10px",
-        padding: "10px",
-        margin: "10px",
-        backgroundColor: color
-      }}>
+      <div className={styles.box} style={{borderColor: colors[color] || 'pink'}}>
         {children}
       </div>
     );
